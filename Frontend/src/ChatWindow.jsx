@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useContext } from "react";
 import { MyContext } from "./MyContext.jsx";
 import { ScaleLoader } from "react-spinners";
+import EchoAiFullLogo from "./assets/EchoAi_logo_fullName2.png";
 
 function ChatWindow() {
   const {
@@ -67,9 +68,8 @@ function ChatWindow() {
   return (
     <div className="chatWindow">
       <div className="navbar">
-        <span>
-          EchoAi<i className="fa-solid fa-chevron-down"></i>
-        </span>
+        <img src={EchoAiFullLogo} alt="logo" className="fullNameLogo"></img>
+
         <div className="userIconDiv" onClick={handleProfileClick}>
           <span className="userIcon">
             <i className="fa-solid fa-user"></i>

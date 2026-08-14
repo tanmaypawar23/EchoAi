@@ -2,6 +2,8 @@
   max-width: 700px;
   overflow-y: scroll;
   padding: 8rem;
+  scrollbar-width: none; /* Firefox: hides scrollbar, scroll still works */
+  -ms-overflow-style: none; /* old Edge/IE: hides scrollbar */
 }
 .userDiv {
   display: flex;

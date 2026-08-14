@@ -21,9 +21,9 @@ button {
 }
 
 .logo {
-  height: 25px;
-  width: 25px;
-  background-color: #fff;
+  height: 30px;
+  width: 30px;
+  background-color: #000000;
   border-radius: 50%;
   object-fit: cover;
 }
