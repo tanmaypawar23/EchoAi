@@ -1,7 +1,6 @@
 # EchoAi 🤖
 
-EchoAi is an AI-powered chatbot application that lets users have real-time conversations with an AI. Built with a React frontend and a Node.js backend.<img width="2875" height="1517" alt="Screenshot 2026-08-15 000544" src="https://github.com/user-attachments/assets/986684c4-f41b-4077-bdb9-4eb5e86efaa5" />
-
+EchoAi is an AI-powered chatbot application that lets users have real-time conversations with an AI. Built with a React frontend and a Node.js backend.
 
 ## ✨ Features
 
