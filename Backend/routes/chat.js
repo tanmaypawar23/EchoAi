@@ -64,7 +64,7 @@ router.post("/chat", async (req, res) => {
   const { threadId, message } = req.body;
 
   if (!threadId || !message) {
-    res.status(400).json({ error: "misssing required feilds" });
+    return res.status(400).json({ error: "missing required feilds" });
   }
 
   try {
@@ -84,6 +84,12 @@ router.post("/chat", async (req, res) => {
       thread.messages.push({ role: "user", content: message });
     }
     const assistantReply = await getGeminiAPIResponse(message);
+
+    if (!assistantReply) {
+      return res
+        .status(500)
+        .json({ error: "Gemini did not respond properly. Check server logs." });
+    }
 
     thread.messages.push({ role: "assistant", content: assistantReply });
     thread.updatedAt = new Date();
