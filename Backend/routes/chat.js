@@ -37,9 +37,9 @@ router.get("/thread/:threadId", async (req, res) => {
     const thread = await Thread.findOne({ threadId });
 
     if (!thread) {
-      res.status(404).json({ error: "Thread not found" });
+      return res.status(404).json({ error: "Thread not found" });
     }
-    res.json(thread.message);
+    res.json(thread.messages);
   } catch (err) {
     console.log(err);
     res.status(500).json({ error: "Failed to fetch chats" });
