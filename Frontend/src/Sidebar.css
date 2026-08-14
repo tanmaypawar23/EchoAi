@@ -77,3 +77,7 @@ button:hover {
 .fa-trash:hover {
   color: #f87071 !important;
 }
+.highlighted {
+  background-color: rgba(180, 180, 180, 0.1);
+  border-radius: 10px;
+}
